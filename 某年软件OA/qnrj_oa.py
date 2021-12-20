@@ -45,7 +45,7 @@ def readfile(urlpath):
     with open(urlpath,"r") as f:
         line = f.readlines()
     for i in line:
-        if '/' == i.strip()[:-1]:
+        if '/' == i.strip()[-1:]:
             i = i.strip()
         else:
             i = i.strip()+'/'
